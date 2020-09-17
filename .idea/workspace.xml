@@ -13,8 +13,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="qrcode1" type="Python.DjangoServer" factoryName="Django server">
-      <module name="qrcode1" />
+    <configuration name="qrcode_example" type="Python.DjangoServer" factoryName="Django server">
+      <module name="qrcode_example" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
