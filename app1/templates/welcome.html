@@ -1,0 +1,25 @@
+{% extends 'common.html' %}
+
+{% block amara %}
+{% load static %}
+{{data}}
+<table class="table table-borderless">
+    <thead>
+    <tr>
+        <th scope="col" colspan="2" class="one">Scan With Your Mobile Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row" colspan="2" style="text-align: center;">
+        <img src="{% static 'images/qrcode1.jpg' %}" style="width: auto;">
+        </th>
+    </tr>
+    <tr>
+        <th scope="row" style="text-align: center;color: green;">
+            <h4>To download the QR-image : <a href="{% static 'images/qrcode1.jpg' %}" download> Click Here </a></h4>    
+        </th>
+    </tr>  
+    </tbody>
+</table>
+{% endblock %}   

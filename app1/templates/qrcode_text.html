@@ -1,0 +1,29 @@
+{% extends 'common.html' %}
+
+{% block amara %}
+  <form action="{% url 'text' %}" method="POST">
+      {% csrf_token %}
+  <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th scope="col" colspan="2" class="one">Write Your Text </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2" id="three">
+              <textarea class="form-control" required name="t1" title="Write your own text.To create qrcode image, for example: your name/ email/ address...etc"></textarea>
+          </th>
+        </tr>
+        <tr>
+          <th scope="row" class="two">
+              <button type="submit" class="btn btn-primary"> submit </button>
+          </th>
+          <th scope="row" class="two">
+              <button type="reset" class="btn btn-danger"> clear </button>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+    </form> 
+{% endblock %}
